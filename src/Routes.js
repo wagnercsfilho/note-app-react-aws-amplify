@@ -31,6 +31,9 @@ export default function Routes() {
       <AuthenticatedRoute exact path="/notes/:id">
         <Notes />
       </AuthenticatedRoute>
+      <Route>
+        <NotFound />
+      </Route>
     </Switch>
   );
 }
